@@ -1,9 +1,7 @@
 let lista = [""];
 let gwiazdki = document.getElementById("paragraf");
 
-const dlugosc = prompt("Podaj dlugosc choinki.");
-
-function gwiazdka() {
+function gwiazdka(dlugosc) {
   for (i = 0; i < dlugosc - 1; i++) {
     lista.push((lista[i] = lista[i] + "*"));
   }
@@ -13,4 +11,4 @@ function gwiazdka() {
   return final;
 }
 
-gwiazdka();
+gwiazdka(prompt("Podaj dlugosc choinki."));
